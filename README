@@ -1,6 +1,7 @@
  Password Generator Program v1.1
  pgen
  Written by Dan "Anansi" Ambrogio
+ Written in Python 3.2.2
 
  Purpose: The program takes 2 base passwords and combines them with the
    website they are to be used for to make a single, secure password
