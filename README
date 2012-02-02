@@ -1,0 +1,23 @@
+ Password Generator Program v1.1
+ pgen
+ Written by Dan "Anansi" Ambrogio
+
+ Purpose: The program takes 2 base passwords and combines them with the
+   website they are to be used for to make a single, secure password
+   for each site. All the user has to remember is their passwords,
+   meaning the password they actually type into the website will be
+   more complex and difficult to crack than one they had to memorize.
+   It also eliminates shared passwords between sites, so someone who
+   finds out your Reddit password can't simply use it to access your
+   email.
+
+   Both 9- and 12-digit passwords can be created, at the user's 
+   discretion, to account for different websites' eccentricities.
+
+   One weakness this method has is that all passwords are hex values,
+   meaning that they consist of characters from 0-9 and a-f, A-F. Thus,
+   there are fewer possible combinations than a completely alphanumeric
+   password. Fortunately, an attacker would have to know that the letters
+   g-z and G-Z are not in use to gain an advantage.
+   Anyone improving upon this program would do well to change the method
+   of password generation to work around this weakness.
