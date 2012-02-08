@@ -1,7 +1,6 @@
 # Password Generator Program v1.1
 # pgen
 # Written by Dan "Anansi" Ambrogio
-# Written in Python 3.2.2
 #
 # Purpose: The program takes 2 base passwords and combines them with the
 #   website they are to be used for to make a single, secure password
@@ -137,10 +136,13 @@ if __name__ == "__main__":
     # Generates a password. Only exits the loop if the password
     # is marked as valid
     valid = False
+    count = 0
     while valid == False:
-        output = gen_pword(p1, p2, site, length)
-        if (check_pword(output) == True): valid = True
+        output = gen_pword(p1, p2, site, length, count)
+        if (check_pword(output) == True): 
+            valid = True
+        else: count += 1
     
     print( 'Your new password is: {}'.format(output) )
     input( 'Press Enter to exit the program' )
-    
+    print (chr(27) + "[2J")     #Clears the screen
